@@ -1,0 +1,386 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f0f0f0;
+    }
+
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    .hover-btn:hover {
+      background-color: orange;
+      color: white;
+    }
+
+    .rounded-box {
+      width: 200px;
+      height: 100px;
+      background-color: tomato;
+      border-radius: 20px;
+    }
+
+    .shadow-box {
+      width: 200px;
+      height: 100px;
+      background-color: lightgray;
+      box-shadow: 5px 5px 10px gray;
+    }
+
+    .shadow-text {
+      text-shadow: 2px 2px 4px #000;
+      color: white;
+      background: black;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    .responsive-img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation: move 2s infinite alternate;
+    }
+
+    @keyframes move {
+      from { transform: translateX(0); }
+      to { transform: translateX(200px); }
+    }
+
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 10px;
+    }
+
+    .home-btn {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      text-decoration: none;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .home-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Home Button -->
+  <a href="index.html" class="home-btn">Home</a>
+
+  <!-- You can continue with your sections below this line -->
+  <h1>CSS Examples</h1>
+  /* Example 10 */
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+  }
+
+  .grid-item {
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<h1>All-in-One CSS Examples</h1>
+
+<!-- Example 1: Background Color -->
+<section>
+  <h2>Example 1: Background Color</h2>
+  <p>The background color of this page is light gray.</p>
+</section>
+
+<!-- Example 2: Center Text -->
+<section>
+  <h2>Example 2: Center Text</h2>
+  <h3 class="center-text">This text is centered</h3>
+</section>
+
+<!-- Example 3: Hover Effect on Button -->
+<section>
+  <h2>Example 3: Hover Effect on Button</h2>
+  <button class="hover-btn">Hover Me</button>
+</section>
+
+<!-- Example 4: Rounded Corners -->
+<section>
+  <h2>Example 4: Rounded Corners</h2>
+  <div class="rounded-box"></div>
+</section>
+
+<!-- Example 5: Box Shadow -->
+<section>
+  <h2>Example 5: Box Shadow</h2>
+  <div class="shadow-box"></div>
+</section>
+
+<!-- Example 6: Text Shadow -->
+<section>
+  <h2>Example 6: Text Shadow</h2>
+  <h3 class="shadow-text">Shadow Text</h3>
+</section>
+
+<!-- Example 7: Responsive Image -->
+<section>
+  <h2>Example 7: Responsive Image</h2>
+  <img src="https://via.placeholder.com/400" class="responsive-img" alt="Sample Image">
+</section>
+
+<!-- Example 8: Simple Animation -->
+<section>
+  <h2>Example 8: Simple Animation</h2>
+  <div class="animated-box"></div>
+</section>
+
+<!-- Example 9: Navigation Bar -->
+<section>
+  <h2>Example 9: Navigation Bar</h2>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</section>
+
+<!-- Example 10: CSS Grid Layout -->
+<section>
+  <h2>Example 10: CSS Grid Layout</h2>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+  </div>
+</section>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Examples</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f0f0f0;
+  }
+
+  section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  /* Example 2 */
+  .center-text {
+    text-align: center;
+  }
+
+  /* Example 3 */
+  .hover-btn:hover {
+    background-color: orange;
+    color: white;
+  }
+
+  /* Example 4 */
+  .rounded-box {
+    width: 200px;
+    height: 100px;
+    background-color: tomato;
+    border-radius: 20px;
+  }
+
+  /* Example 5 */
+  .shadow-box {
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+    box-shadow: 5px 5px 10px gray;
+  }
+
+  /* Example 6 */
+  .shadow-text {
+    text-shadow: 2px 2px 4px #000;
+    color: white;
+    background: black;
+    padding: 10px;
+    display: inline-block;
+  }
+
+  /* Example 7 */
+  .responsive-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  /* Example 8 */
+  .animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: move 2s infinite alternate;
+  }
+
+  @keyframes move {
+    from { transform: translateX(0); }
+    to { transform: translateX(200px); }
+  }
+
+  /* Example 9 */
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  .navbar a {
+    float: left;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Example 10 */
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+  }
+
+  .grid-item {
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<h1>All-in-One CSS Examples</h1>
+
+<!-- Example 1: Background Color -->
+<section>
+  <h2>Example 1: Background Color</h2>
+  <p>The background color of this page is light gray.</p>
+</section>
+
+<!-- Example 2: Center Text -->
+<section>
+  <h2>Example 2: Center Text</h2>
+  <h3 class="center-text">This text is centered</h3>
+</section>
+
+<!-- Example 3: Hover Effect on Button -->
+<section>
+  <h2>Example 3: Hover Effect on Button</h2>
+  <button class="hover-btn">Hover Me</button>
+</section>
+
+<!-- Example 4: Rounded Corners -->
+<section>
+  <h2>Example 4: Rounded Corners</h2>
+  <div class="rounded-box"></div>
+</section>
+
+<!-- Example 5: Box Shadow -->
+<section>
+  <h2>Example 5: Box Shadow</h2>
+  <div class="shadow-box"></div>
+</section>
+
+<!-- Example 6: Text Shadow -->
+<section>
+  <h2>Example 6: Text Shadow</h2>
+  <h3 class="shadow-text">Shadow Text</h3>
+</section>
+
+<!-- Example 7: Responsive Image -->
+<section>
+  <h2>Example 7: Responsive Image</h2>
+  <img src="https://via.placeholder.com/400" class="responsive-img" alt="Sample Image">
+</section>
+
+<!-- Example 8: Simple Animation -->
+<section>
+  <h2>Example 8: Simple Animation</h2>
+  <div class="animated-box"></div>
+</section>
+
+<!-- Example 9: Navigation Bar -->
+<section>
+  <h2>Example 9: Navigation Bar</h2>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</section>
+
+<!-- Example 10: CSS Grid Layout -->
+<section>
+  <h2>Example 10: CSS Grid Layout</h2>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+  </div>
+</section>
+ 
+<!-- Home Button -->
+<a href="index.html" class="home-btn">Home</a>

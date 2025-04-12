@@ -1,0 +1,170 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Activities</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: rgb(0, 0, 0);
+    }
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    section {
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      border-radius: 8px;
+    }
+
+    .centered {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    input, button {
+      margin: 5px;
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript Activities</h1>
+
+  
+  <!-- Activity 1 -->
+  <section>
+    <h2>Activity 1: Say Hello</h2>
+    <button onclick="sayHello()">Click Me</button>
+    <script>
+      function sayHello() {
+        alert("Hello there!");
+      }
+    </script>
+  </section>
+
+  <!-- Activity 2 -->
+  <section>
+    <h2>Activity 2: Change Text</h2>
+    <p id="text">Original Text</p>
+    <button onclick="changeText()">Change Text</button>
+    <script>
+      function changeText() {
+        document.getElementById("text").innerHTML = "Text has changed!";
+      }
+    </script>
+  </section>
+
+  <!-- Activity 3 -->
+  <section>
+    <h2>Activity 3: Validate Form</h2>
+    <form onsubmit="return validateForm()">
+      Name: <input type="text" id="name">
+      <input type="submit" value="Submit">
+    </form>
+    <script>
+      function validateForm() {
+        let name = document.getElementById("name").value;
+        if (name === "") {
+          alert("Name cannot be empty!");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </section>
+
+  <!-- Activity 4 -->
+  <section>
+    <h2>Activity 4: Show Current Date & Time</h2>
+    <p id="datetime"></p>
+    <script>
+      document.getElementById("datetime").innerHTML = new Date().toLocaleString();
+    </script>
+  </section>
+
+  <!-- Activity 5 -->
+  <section>
+    <h2>Activity 5: Change Background Color</h2>
+    <button onclick="document.body.style.backgroundColor = 'lightblue'">Change Background</button>
+  </section>
+
+  <!-- Activity 6 -->
+  <section>
+    <h2>Activity 6: Hover Effect</h2>
+    <p onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">
+      Hover over me!
+    </p>
+  </section>
+
+  <!-- Activity 7 -->
+  <section>
+    <h2>Activity 7: Add Two Numbers</h2>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="add()">Add</button>
+    <p id="result"></p>
+    <script>
+      function add() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+        document.getElementById("result").innerText = "Sum: " + (a + b);
+      }
+    </script>
+  </section>
+
+  <!-- Activity 8 -->
+  <section>
+    <h2>Activity 8: Toggle Hidden Text</h2>
+    <p id="hiddenText" style="display:none;">You can now see me!</p>
+    <button onclick="toggleText()">Toggle Text</button>
+    <script>
+      function toggleText() {
+        const text = document.getElementById("hiddenText");
+        text.style.display = (text.style.display === "none") ? "block" : "none";
+      }
+    </script>
+  </section>
+
+  <!-- Activity 9 -->
+  <section>
+    <h2>Activity 9: List Fruits</h2>
+    <ul id="fruitList"></ul>
+    <script>
+      const fruits = ["Apple", "Banana", "Cherry"];
+      const list = document.getElementById("fruitList");
+      fruits.forEach(fruit => {
+        const li = document.createElement("li");
+        li.textContent = fruit;
+        list.appendChild(li);
+      });
+    </script>
+  </section>
+
+  <!-- Activity 10 -->
+  <section>
+    <h2>Activity 10: Count Clicks</h2>
+    <button onclick="countClicks()">Click Me!</button>
+    <p id="clickCount">Clicks: 0</p>
+    <script>
+      let count = 0;
+      function countClicks() {
+        count++;
+        document.getElementById("clickCount").innerText = "Clicks: " + count;
+      }
+    </script>
+  </section>
+
+</body>
+</html>
+<!-- Back Button -->
+<button onclick="location.href='index.html'">Back to Home Page</button>
